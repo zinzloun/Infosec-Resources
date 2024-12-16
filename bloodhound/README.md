@@ -1,9 +1,48 @@
-# NetExec Bloodhound remote collector
+## Install Bloodhound server on Debian\Ubuntu latest
+### Installare Node.js
+     curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+     sudo apt install -y nodejs
+Verify the installation
 
-## Install NetExec
+    node -v && npm -v
+###  Install Neo4j
+    wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/neo4j.gpg
+    echo "deb [signed-by=/usr/share/keyrings/neo4j.gpg] https://debian.neo4j.com stable latest" | sudo tee /etc/apt/sources.list.d/neo4j.list
+    sudo apt update
+    sudo apt install -y neo4j
+
+### Make the server listens to all the network interfaces
+Uncomment the corresponding line in the server configuration file:
+    
+    sudo vi /etc/neo4j/neo4j.conf
+    ...
+    # With default configuration Neo4j only accepts local connections.
+    # To accept non-local connections, uncomment this line:
+    server.default_listen_address=0.0.0.0
+    ...
+### Run Neo4j (and verify)
+    sudo systemctl start neo4j
+    sudo systemctl status neo4j
+Change the default password for user neo4j:neo4j at http://10.103.5.102:7474
+
+### Install Bloodhound (requires GTK UI)
+Download the latest version at https://github.com/SpecterOps/BloodHound-Legacy/releases
+
+Unzip the file:
+
+    unzip BloodHound-linux-x64.zip
+then enter the unzipped folder and run it:
+    
+    ./BloodHound
+    
+Use the neo4j password to login
+
+## NetExec Bloodhound remote collector
+
+### Install NetExec
     sudo apt install pipx git  python3-dev
     pipx install git+https://github.com/Pennyw0rth/NetExec
     pipx ensurepath
     source .bashrc
-## Run
+### Run
     nxc ldap DC-IP -u domain_username  -p "Your password" -d yourdomain.local --dns-server DNS-IP --bloodhound --collection All
