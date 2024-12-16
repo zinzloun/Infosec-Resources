@@ -2,6 +2,8 @@
 - Abusing [Docker](./docker-attack)
 - Abusing [DevOps pipe](./devops_abuse)
 - [Dependency confusion](./dep-con)
+- [Bloodhound](./bloodhound)
+
 # Scripts
 Some u(nu)seful scripts
 - SprayDom.ps1: Password spray attack against domain users
