@@ -35,6 +35,8 @@ Use the neo4j password to login
     sudo apt install pipx git  python3-dev
     pipx install git+https://github.com/Pennyw0rth/NetExec
     pipx ensurepath
-    source .bashrc
+
+Restart your shell
+
 ### Run
     nxc ldap DC-IP -u domain_username  -p "Your password" -d yourdomain.local --dns-server DNS-IP --bloodhound --collection All
