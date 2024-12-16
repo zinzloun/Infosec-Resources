@@ -11,19 +11,11 @@ Verify the installation
     sudo apt update
     sudo apt install -y neo4j
 
-### Make the server listens to all the network interfaces
-Uncomment the corresponding line in the server configuration file:
-    
-    sudo vi /etc/neo4j/neo4j.conf
-    ...
-    # With default configuration Neo4j only accepts local connections.
-    # To accept non-local connections, uncomment this line:
-    server.default_listen_address=0.0.0.0
-    ...
+
 ### Run Neo4j (and verify)
     sudo systemctl start neo4j
     sudo systemctl status neo4j
-Change the default password for user neo4j:neo4j at http://10.103.5.102:7474
+Change the default password for user neo4j:neo4j at http://127.0.0.1:7474
 
 ### Install Bloodhound (requires GTK UI)
 Download the latest version at https://github.com/SpecterOps/BloodHound-Legacy/releases
