@@ -1,5 +1,7 @@
-# 1. Generate a domain users list (if not present)
-# 2. Lunch the attack using a provided password
+# 1. Import the file in powershell: PS> . .\SprayDom.ps1
+# 1.1 [Optional] Test ad connection: Test-ADAuthentication
+# 2 Lunch the attack: Get-Spray  
+
 function Test-ADAuthentication {
 	Param(
 		[Parameter(Mandatory)]
