@@ -40,3 +40,5 @@ Restart your shell
 
 ### Run
     nxc ldap DC-IP -u domain_username  -p "Your password" -d yourdomain.local --dns-server DNS-IP --bloodhound --collection All
+
+## Upload the zip file obtained just dragging & drop it into the Bloodhound GUI
