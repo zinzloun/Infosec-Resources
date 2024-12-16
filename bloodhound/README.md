@@ -1,4 +1,4 @@
-# NetExec bloodhound remote collector
+# NetExec Bloodhound remote collector
 ## Run
     nxc ldap DC-IP -u domain_username  -p "Your password" -d yourdomain.local --dns-server DNS-IP --bloodhound --collection All
 ## Install NetExec
