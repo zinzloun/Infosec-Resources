@@ -25,7 +25,7 @@ Unzip the file:
     unzip BloodHound-linux-x64.zip
 then enter the unzipped folder and run it:
     
-    ./BloodHound
+    sudo ./BloodHound --no-sandbox
     
 Use the neo4j password to login
 
