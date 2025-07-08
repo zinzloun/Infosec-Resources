@@ -1,5 +1,5 @@
 ## Install Bloodhound server on Debian\Ubuntu latest
-### Installare Node.js
+### Install Node.js
      curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
      sudo apt install -y nodejs
 Verify the installation
