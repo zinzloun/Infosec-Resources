@@ -16,3 +16,6 @@ Some u(nu)seful scripts
 - install_cron_rs_openssl.sh: Set a cron job to persist a reverse shell through openssl, see comment in the file for more info
 - cewl2ascii.sh: Clean up a generated wordlist from a Wikipedia site, using cewl (required)
 - ass_rem_cert.ps1: Assesment remote X509 Certificates using TLS 1.3 (you can change it)
+
+# GRC
+[Resources](./GRC) to support GRC activities
