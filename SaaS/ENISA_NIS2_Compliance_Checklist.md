@@ -4,18 +4,17 @@ This checklist is based on **ENISA – Technical Implementation Guidance on Cybe
 Use it as a roadmap to achieve compliance readiness.  
 
 Status legend:  
-- [ ] = Not started  
-- [~] = In progress  
-- [x] = Completed  
+- [ ] = ToDo,  ➡️ = In progress
+- [x] = Completed   
 
 ---
 
 ## 1. Security Policy for NIS
-- [ ] **Actions**
+- [ ] **Actions** ➡️
   - Draft and approve Information Security Policy (SaaS/cloud focused).
   - Define roles & responsibilities (CISO, DevSecOps, DPO, CloudOps).
   - Annual review and board approval.
-- [ ] **Evidence**
+- [ ] **Evidence** ➡️
   - Security policy document.
   - Org chart with responsibilities.
   - Meeting minutes / signed approval.
@@ -172,7 +171,7 @@ Status legend:
 
 ---
 
-# Roadmap Phases
+# Roadmap Phases for SME
 
 - **Phase 1 (0–3 months):** Governance setup (policies, risk, IRP, BCP/DRP).  
 - **Phase 2 (3–6 months):** Technical security (MFA, DevSecOps, monitoring, backups).  
