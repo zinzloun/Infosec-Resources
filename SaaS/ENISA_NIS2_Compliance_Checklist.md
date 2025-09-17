@@ -9,7 +9,7 @@ Status legend:
 
 ---
 
-## 1. Security Policy for NIS
+## 1. Security Policy for NIS2
 - [ ] **Actions** ➡️
   - Draft and approve Information Security Policy (SaaS/cloud focused).
   - Define roles & responsibilities (CISO, DevSecOps, DPO, CloudOps).
