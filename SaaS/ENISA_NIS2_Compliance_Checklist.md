@@ -13,7 +13,7 @@ Status legend:
 - [ ] **Actions** ➡️
   - Draft and approve Information Security Policy (SaaS/cloud focused).
   - Define roles & responsibilities (CISO, DevSecOps, DPO, CloudOps).
-  - Annual review and board approval.
+  - Annual review (or more often if required by change management).
 - [ ] **Evidence** ➡️
   - Security policy document.
   - Org chart with responsibilities.
