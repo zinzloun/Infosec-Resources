@@ -1,6 +1,6 @@
 # ENISA NIS2 Compliance Checklist for SaaS Company
 
-This checklist is based on **ENISA – Technical Implementation Guidance on Cybersecurity Risk Management Measures (v1.0, 2025)**.  
+This checklist is based on [ENISA – Technical Implementation Guidance on Cybersecurity Risk Management Measures (v1.0, 2025)](https://www.enisa.europa.eu/sites/default/files/2025-06/ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf)  
 Use it as a roadmap to achieve compliance readiness.  
 
 Status legend:  
