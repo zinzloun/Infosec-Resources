@@ -4,7 +4,8 @@
 - Abusing [Docker](./docker-attack)
 - Abusing [DevOps pipe](./devops_abuse)
 - [Dependency confusion](./dep-con)
-- [Bloodhound](./bloodhound)
+- [Use Bloodhound](./bloodhound)
+- [Use Farady](./farady)
 
 # Scripts
 Some u(nu)seful scripts
