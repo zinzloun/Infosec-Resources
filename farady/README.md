@@ -131,6 +131,8 @@ You will get a file with .nessus extension
 		
 		MONTMARBOOK.xxxxxx.local: ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 5    
 4. Use the web GUI to get detailed informations
+![FF](faraday-gui.png)
+
 
 ## Stop and restart
 ### Stop venv e docker container
