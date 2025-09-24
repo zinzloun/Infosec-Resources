@@ -109,6 +109,29 @@ Faraday> workspace create test
 
 You can check the results in the web-gui
 
+## Ingest a Nessus report
+You can ingest a Nessus report as follows (I used Nessus Essentials 10.9.3):
+1. Export your scan from Nessus
+![FF](export-nessus.png)
+You will get a file with .nessus extension
+2. Load the file data into Faraday using the CLI
+
+   		faraday-cli tool report --plugin-id Nessus test.nessus  
+		📄 Processing Nessus report
+		⬆ Sending data to workspace: test
+		
+		✔ Done
+3. Check the results:
+
+		[ws:test]> stats --type vulns
+		⠏ Gathering data
+		# Vulnerability stats [test]
+		
+		▇ vulns  
+		
+		MONTMARBOOK.xxxxxx.local: ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 5    
+4. Use the web GUI to get detailed informations
+
 ## Stop and restart
 ### Stop venv e docker container
 (faraday-env) ┌─[filippo@parrot]─[~]
