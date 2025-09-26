@@ -102,6 +102,8 @@ if active_malops:
     log("==>There are active MalOps!!!<==")
     body_eml = json.dumps(active_malops, indent=4, sort_keys=True)
     send_email(sender=sender, recipient=username, subject="Cybereason alert: active MalOps", body=body_eml)
+else:
+    log("No active MalOps found, you can sleep soundly :)")
 
 # -------------------------------
 # Destroy session
