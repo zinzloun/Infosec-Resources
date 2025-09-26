@@ -10,14 +10,16 @@ This [script](./getMalops.py) automates the retrieval of active MalOps for the c
 5. Writes a log file (in `w` mode).  
 6. Closes the session.
 
-
 ### Requirements
 
 - Python 3  
-- Cybereason root CA certificate (PEM format) — required if the Cybereason server uses an internal/private CA  
-- The API calling system **must trust** the above certificate
+- Cybereason root CA certificate (PEM format) — required if the Cybereason server uses an internal or private CA  
+- The system making API calls **must trust** the above certificate
 
-> If you prefer (for testing only), you can skip certificate verification by using `verify=False` in the requests call (instead of `verify=CERT_PATH`). **This is strongly discouraged in production** because it disables TLS certificate validation.
+> For testing purposes only, you can skip certificate verification by using `verify=False` in the requests call (instead of `verify=CERT_PATH`). **This is strongly discouraged in production** because it disables TLS certificate validation.
+
+**Note:** It is not enough to simply provide the certificate path in the script. The certificate must also be installed and trusted on the client system (the machine making the API calls).
+
 
 ## Setup
 
