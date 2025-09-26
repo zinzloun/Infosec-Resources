@@ -87,7 +87,7 @@ end_dt = start_dt + timedelta(days=6, hours=23, minutes=59, seconds=59)  # Sunda
 start_time = int(start_dt.timestamp() * 1000)
 end_time = int(end_dt.timestamp() * 1000)
 log(f"Requested period: {start_dt} → {end_dt}")
-log(f"|_start_time = {start_time}, end_time = {end_time}")
+# log(f"|_start_time = {start_time}, end_time = {end_time}")
 
 try:
     query = json.dumps({"startTime": start_time, "endTime": end_time})
