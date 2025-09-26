@@ -1,4 +1,4 @@
-# ![Cyb](cyb.png) Cybereason OnPrem API
+# ![Cyb](cyb.png) Cybereason OnPrem API 
 
 ## Use Case: Retrieve Active MalOps in the Current Week
 This [script](./getMalops.py) automates the retrieval of active MalOps for the current week and performs related actions. Specifically, it:
@@ -42,4 +42,4 @@ Although this information is not documented on the Nest, Cybereason support conf
 
 > "The API call `/rest/detection/inbox` is deprecated, but it still exists in On-Prem API calls."
 
-As a result, this call **may no longer work in future releases** (version > 23.2.307).
+As a result, this call **may no longer work in future releases** (version > 23.2.307) ![Cyb](cyb.png)
