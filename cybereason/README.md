@@ -2,6 +2,15 @@
 
 ## Use Case: Retrieve Active MalOps in the Current Week
 
+### Requirements
+
+- Python 3  
+- Cybereason root CA certificate (PEM format) — required if the Cybereason server uses an internal/private CA  
+- The API calling system **must trust** the above certificate
+
+> If you prefer (for testing only), you can skip certificate verification by using `verify=False` in the requests call (instead of `verify=ROOT_CERT_PATH`). **This is strongly discouraged in production** because it disables TLS certificate validation.
+
+
 This script automates the retrieval of active MalOps for the current week and performs related actions. Specifically, it:
 
 1. Reads configuration parameters from a `.ini` file.  
