@@ -130,8 +130,6 @@ You will get a file with .nessus extension
 		▇ vulns  
 		
 		MONTMARBOOK.xxxxxx.local: ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 5    
-4. Use the web GUI to get detailed informations
-![FF](faraday-gui.png)
 
 ## Ingest an Openvas scanner
 Export your report from Openvas in XML format:
@@ -146,8 +144,11 @@ Then import it in Faraday using the CLI:
 
 	✔ Done
 
+## Access Faraday GUI to get detailed information
+![FF](faraday-gui.png)
 
-## Stop and restart
+
+## Stop and restart Faraday
 ### Stop venv e docker container
 (faraday-env) ┌─[filippo@parrot]─[~]
 
