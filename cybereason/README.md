@@ -1,6 +1,15 @@
 # ![Cyb](cyb.png) Cybereason OnPrem API
 
 ## Use Case: Retrieve Active MalOps in the Current Week
+This script automates the retrieval of active MalOps for the current week and performs related actions. Specifically, it:
+
+1. Reads configuration parameters from a `.ini` file.  
+2. Authenticates to the Cybereason Webserver.  
+3. Sends a request to the API endpoint to query active MalOps for the current week.  
+4. Sends an email notification if any MalOps are found.  
+5. Writes a log file (in `w` mode).  
+6. Closes the session.
+
 
 ### Requirements
 
@@ -10,15 +19,20 @@
 
 > If you prefer (for testing only), you can skip certificate verification by using `verify=False` in the requests call (instead of `verify=CERT_PATH`). **This is strongly discouraged in production** because it disables TLS certificate validation.
 
+## Setup
 
-This script automates the retrieval of active MalOps for the current week and performs related actions. Specifically, it:
+1. **Create a configuration file** `config.ini` in the same directory as the script:
 
-1. Reads configuration parameters from a `.ini` file.  
-2. Authenticates to the Cybereason Webserver.  
-3. Sends a request to the API endpoint to query active MalOps for the current week.  
-4. Sends an email notification if any MalOps are found.  
-5. Writes a log file (in `w` mode).  
-6. Closes the session.
+```ini
+[DEFAULT]
+USER = your_username@example.com (this is also the email recipient)
+PWD = your_password
+SERVER = your_cybereason_server
+PORT = 443
+SMTP_SERVER = smtp.example.com
+SMTP_PORT = 25
+SENDER = sender@example.com
+```
 
 ### Note
 
