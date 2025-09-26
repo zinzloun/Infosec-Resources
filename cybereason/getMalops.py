@@ -13,7 +13,7 @@ config = configparser.ConfigParser()
 # Example config file path
 config.read("./config.ini")  # Make sure your real config.ini is in .gitignore
 
-username = config["DEFAULT"].get("USER", "your_username")
+username = config["DEFAULT"].get("USER", "username_email-recipient")
 password = config["DEFAULT"].get("PWD", "your_password")
 server = config["DEFAULT"].get("SERVER", "cybereason_server")
 port = config["DEFAULT"].get("PORT", "443")
