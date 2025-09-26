@@ -133,6 +133,19 @@ You will get a file with .nessus extension
 4. Use the web GUI to get detailed informations
 ![FF](faraday-gui.png)
 
+## Ingest an Openvas scanner
+Export your report from Openvas in XML format:
+![FF](openvas.png)
+
+Then import it in Faraday using the CLI:
+
+	(faraday-env) ┌─[filippo@parrot]─[~]
+	└──╼ $faraday-cli tool report --plugin-id Openvas openvas-test.xml 
+	📄 Processing Openvas report
+	⬆ Sending data to workspace: test
+
+	✔ Done
+
 
 ## Stop and restart
 ### Stop venv e docker container
