@@ -21,5 +21,8 @@ Some u(nu)seful scripts
 - cewl2ascii.sh: Clean up a generated wordlist from a Wikipedia site, using cewl (required)
 - ass_rem_cert.ps1: Assesment remote X509 Certificates using TLS 1.3 (you can change it)
 
-# GRC
+# Resources
+## GRC
 [Resources](./GRC) to support GRC activities
+## Best cybersecurity feeds
+[OPML](./fb-cyb.opml)
