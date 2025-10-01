@@ -6,7 +6,7 @@
 - [Dependency confusion](./dep-con)
 - [Use Bloodhound](./bloodhound)
 - [Use Farady](./farady)
-- [Cybereason on-prem API](./cybereason)
+- [Cybereason on-prem](./cybereason)
 
 # Scripts
 Some u(nu)seful scripts
