@@ -1,6 +1,6 @@
 # ![Cyb](cyb.png) Cybereason OnPrem
 
-## Use Case: Retrieve Active MalOps in the Current Week, using API
+## Retrieve Active MalOps in the Current Week, using API
 This [script](./getMalops.py) automates the retrieval of active MalOps for the current week and performs related actions. Specifically, it:
 
 1. Reads configuration parameters from a `.ini` file.  
@@ -42,4 +42,9 @@ Although this information is not documented on the Nest, Cybereason support conf
 
 > "The API call `/rest/detection/inbox` is deprecated, but it still exists in On-Prem API calls."
 
-As a result, this call **may no longer work in future releases** (version > 23.2.307) ![Cyb](cyb.png)
+As a result, this call **may no longer work in future releases** (version > 23.2.307) 
+
+## Check installation requirements for Linux sensors (23.2.307)
+You can use this [script](./cybereason-sensor-req-check.sh) to automate the process
+
+![Cyb](cyb.png)
