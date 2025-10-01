@@ -1,6 +1,6 @@
-# ![Cyb](cyb.png) Cybereason OnPrem API 
+# ![Cyb](cyb.png) Cybereason OnPrem
 
-## Use Case: Retrieve Active MalOps in the Current Week
+## Use Case: Retrieve Active MalOps in the Current Week, using API
 This [script](./getMalops.py) automates the retrieval of active MalOps for the current week and performs related actions. Specifically, it:
 
 1. Reads configuration parameters from a `.ini` file.  
