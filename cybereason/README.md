@@ -36,6 +36,13 @@ SMTP_PORT = 25
 SENDER = sender@example.com
 ```
 
+### Security consideration and best practice
+- Run the script as standard user, you don't need SUDO or root at all
+- On Cybereason create a user with the minimal privilege to read Malpos, use the related role already configured. Use this user to make the API calls
+- Be sure to set appropriate permission to the configuration file
+
+      chmod 640 config.ini
+
 ### Note
 
 Although this information is not documented on the Nest, Cybereason support confirmed:
