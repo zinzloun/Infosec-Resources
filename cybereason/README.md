@@ -38,7 +38,7 @@ SENDER = sender@example.com
 
 ### Security consideration and best practice
 - Run the script as standard user, you don't need SUDO or root at all
-- On Cybereason create a user with the minimal privilege to read Malpos, use the related role already configured. Use this user to make the API calls
+- On Cybereason create a user with the minimal privilege to read Malpos, use the related role already configured. Use this user in configuration file
 - Be sure to set appropriate permission to the configuration file
 
       chmod 640 config.ini
